@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR"><!-- InstanceBegin template="/Templates/sheshnjak.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" --><title>..:: jQuery ::..</title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="meta" -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="Tomislav Deković, Turanj, fotografija, digitalna fotografija, savjeti za fotografiranje, web dizajn, grafički dizajn, kalibracija monitora" />
+<meta name="Description" content="Tomislav Deković, osobne stranice sa galerijom fotografija i savjetima za fotografiranje. Grafički i web dizajn. Opis i povijest mjesta Turanj." />
+<!-- InstanceEndEditable -->
+<link rel="shortcut icon" href="../favicon.ico" />
+<link href="../dizajn/print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="../dizajn/css.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../dizajn/jquery.js" type="text/javascript"></script>
+<script src="../dizajn/jquery.plugins.js" type="text/javascript"></script>
+<script src="../dizajn/js.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript"><!--
+$(function(){$("#sadrzaj pre>input").click(function(){eval($(this).parent().text());});});
+//--></script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="okvirStranice">
+	<div id="zaglavlje">
+		<div id="zagLivo"><a href="../index.html">..::&nbsp;sheshnjak&nbsp;::..</a></div>
+		<div id="zagSredina"></div>
+		<div id="zagDesno"></div>
+	</div>
+	<div id="okvirSadrzaja">
+		<div id="livo">
+<ul id="navigacija">
+	<li>fotografija<ul>
+		<li><a href="../fotogalerija.html">fotogalerija</a></li>
+		<li><a href="../kalibracija.html">kalibracija monitora</a></li>
+		<li><a href="../fotosavjeti.html">savjeti za fotografiranje</a></li>
+	</ul></li>
+	<li>dizajn<ul>
+		<li><a href="../webdizajn.html">web dizajn</a></li>
+		<li><a href="../grafdizajn.html">grafički dizajn</a></li>
+	</ul></li>
+	<li>ostalo<ul>
+		<li><a href="../omeni.html">o meni</a></li>
+		<li><a href="../turanj.html">turanj</a></li>
+		<li><a href="../gmap.html">gmaps</a></li>
+		<li><a href="../clanci.html">članci</a></li>
+		<li><a href="../linkovi.html">linkovi</a></li>
+		<li><a href="../sitemap.html">mapa weba</a></li>
+	</ul></li>
+	<li><a href="../index-en.html">english</a></li>
+</ul>
+		</div>
+
+		<div id="desno"></div>
+	    <div id="sadrzaj"><!-- InstanceBeginEditable name="sadrzaj" -->
+	    	<h1>članci</h1>
+			<table>
+				<tr>
+					<td>.:.&nbsp;</td>
+					<td><a href="svg.html">svg - revolucija  2D grafike</a></td>
+					<td>.:.</td>
+					<td><a href="nvu.html">&nbsp;N|vu&nbsp;-&nbsp;web&nbsp;dizajn:&nbsp;novi&nbsp;pogled&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td>.:.</td>
+					<td><a href="javascriptBiblioteke.html">JavaScript biblioteke</a></td>
+					<td>.:.</td>
+					<td><a href="firefox.html">firefox - vatren i lukav </a></td>
+				</tr>
+				<tr>
+					<td>.:.</td>
+					<td><a href="jquery.html">jQuery biblioteka</a></td>
+					<td>.:.</td>
+					<td><a href="firefox.html">&nbsp;</a><a href="inkscape.html">inkscape - svg editor</a></td>
+				</tr>
+			</table>
+			<h1>jQuery</h1>
+			<p><a href="http://jquery.com/">jQuery</a> je jedna od najpopularnijih  JavaScript biblioteka, koja je u relativno kratkom roku postala jako popularna zbog lakog korištenja i malog zauzeća resursa na računalu. Više o razlozima i izboru baš jQuery biblioteke možete pročitati u tekstu <a href="javascriptBiblioteke.html">JavaScript biblioteke</a>, a u ovom tekstu ću malo detaljnije opisati kako i početnici mogu koristiti jQuery na svojim stranicama.</p>
+			<h2>osnovne namjene jQuery-a</h2>
+	      <p>.:. DOM pristup i manipulacija<br />
+.:. olakšavanje i ubrzavanje programiranja<br />
+.:. proširivanje funkcionalnosti pomoću gotovih komponenti</p>
+	      <p>S obzirom na osnovne namjene, i koncept ovog vodiča će pratiti ove tri točke, s time da se o proširivanju funkcionalnosti pomoću gotovih komponenti (plugins) nema što previše pisati. Navest ću neke popularne i korisne pluginove, dok se upute za primjenu svakoga razlikuju i sadržane su u paketu kod downloada plugina.</p>
+	      <h1>kako započeti s korištenjem</h1>
+	      <p>Za početak, najvažnije je postaviti reference na samu biblioteku i skriptu koju pišemo. Ako još niste, <a href="../dizajn/jquery.js">jQuery skinite s ovog linka</a> i snimite u jedan testni direktorij. U svakom trenutku možete pogledati izvorni kod moje stranice da bi vidjeli kako to izgleda na stvarnim stranicama (u Firefoxu View&gt;Page Source).</p>
+	      <p>Referenca na jQuery se postavlja u head dijelu html dokumenta, nakon referenci na css datoteku sa stilovima a prije JavaScript datoteke u kojoj ćemo pisati skriptu:</p>
+	      <pre>  &lt;link href=&quot;../dizajn/css.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;
+  &lt;script src=&quot;../dizajn/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;../dizajn/js.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+	      <p>Da bi kod koji napišemo bio procesiran i izvršen moramo internet pregledniku reći da ga procesira, i to na način da ono što želimo izvršiti postavimo unutar ovih linija:</p>
+	      <pre>  $(document).ready(function(){
+  ...naša skripta koja će se automatski izvršiti kod učitavanja 
+  stranice se nalazi između ovih vitičastih zagrada...
+  });</pre>
+	      <p>Na ovoj stranici <code>jquery.js</code> je već učitan i aktivan, pa možemo odmah prikazati neke korisne primjene jQuery biblioteke na stranici. Za početak ćemo prikazati primjere dodavanja, dohvaćanja i manipulacije DOM elemenata (dijelova stranice).</p>
+	      <h2>DOM pristup i manipulacija</h2>
+	      <p>Svaka operacija u JavaScriptu počinje dohvatom (odabirom) elementa na koji se odnosi. Zbog toga svi <abbr title="internet preglednici">browseri</abbr> web stranicu učitavaju u memoriju kao skup objekata koji su međusbno povezani nekim pravilima, i takav pristup se zove <abbr title="Document Object Model">DOM</abbr>. Dakle, pristup objektu je osnova bilo kakve operacije nad njim. Zbog toga i samo ime biblioteke jQuery govori o prioritetima njezinih tvoraca. Riječ <abbr title="upit">query</abbr>, u nazivu jasno govori o tome. A ono preostalo slovo j označava JavaScript.</p>
+	      <p>Za početak ćemo stvoriti jedan novi dio stranice na kojem ćemo prikazati neke od mogućnosti jQuery-a. Ako bi se za to koristili običnim JavaScriptom susreli bi se sa nekoliko problema oko stvaranja DOM elementa, kojeg je potrebno deklarirati, definirati njegova svojstva i zatim definirati mjesto na koje ga umećemo. Najprije kod kojim jQuery stvara novi element sa identifikacijskim atributom &quot;test&quot; ( <code>&lt;div id=&quot;test&quot;&gt;test test test&lt;/div&gt;</code> ) i umeće ga ispred ovog odjeljka teksta:</p>
+	      <pre><input type="button" value="umetanje" />$(this).parent().before('&lt;div id=&quot;test&quot;&gt;test test test&lt;/div&gt;');</pre>
+<p>Nakon dodavanja testnog elementa malo ćemo mu promijeniti svojstva prikaza da bi bio pogodniji za primjere koji tek dolaze:</p>
+<pre><input type="button" value="prikaz" />$(&quot;#test&quot;).css({color:&quot;#000&quot;,background:&quot;#CCC&quot;,border:&quot;1px dotted #666&quot;});</pre>
+<p>Pomaknut ćemo ga u lijevo da bude lakše uočljiv i smanjit ćemo mu širinu tako da stane u slobodan prostor lijevo od teksta, ali nećemo to učiniti odjednom nego koristeći animaciju. Da bi ga mogli pomaknuti bez utjecaja na pozicioniranje ostatka teksta moramo mu prije promijeniti position property. Ovdje je demonstrirana još jedna prednost jQuery-a: kad jednom dohvatite određeni element nad njim možete izvršiti više operacija odjednom povezujući naredbe točkom (to svojstvo se u dokumentaciji zove <acronym title="ulančavanje">chainability</acronym>). Prednost ovog pristupa je u tome što ne morate svaku naredbu upisivati u novi red i svaki put ponavljati referencu na željeni element, nego samo postavite naredbe u lanac. Osim toga, na taj način naredbe se brže izvršavaju jer se procedura nalaženja i odabira željenog elementa ne ponavlja za svaku naredbu.</p>
+	      <pre><input type="button" value="pomak" />$(&quot;#test&quot;).css(&quot;position&quot;,&quot;relative&quot;).animate({left:-368,width:350});</pre>
+	      <p>S obzirom na to da je ovaj tekst prilično dug i razlomljen primjerima, brzo će nam se dogoditi da ne možemo istodobno vidjeti i tekst sa slijedećim korakom i sam element sa primjerom kojim manipuliramo. Zato ćemo mu još jednom promijeniti position property da bi nam stalno ostao u vidljivom okviru. Mogli bismo ga opet pomaknuti koristeći animaciju, ali za promjenu ćemo to obaviti bez šminkerskih efekata i brzo.</p>
+  	        <pre><input type="button" value="pomak 2" />$(&quot;#test&quot;).css({position:&quot;fixed&quot;, top:&quot;10px&quot;, left:&quot;10px&quot;});</pre>
+	      <p>Još jednom ćemo promijeniti stil elementa, ovaj put na drugi način koji je prikladniji kad mijenjamo samo jedno svojstvo. Obratite pažnju na promijenjenu sintaksu u zagradama (koje služe da upišemo parametre <code>css()</code> metode). Umjesto prijašnje sintakse <code>.css({ imeSvojstva: &quot;vrijednostSvojstva&quot;, imeSvojstva2: &quot;vrijednostSvojstva2&quot;})</code> u kojoj CSS parove ime: vrijednost odvajamo zarezom, ovdje ćemo koristiti <code>.css( &quot;imeSvojstva&quot;, &quot;vrijednostSvojstva&quot;)</code>.</p>
+	      <pre><input type="button" value="konačne dimenzije" />$(&quot;#test&quot;).css(&quot;height&quot;,&quot;250px&quot;);</pre>
+	      <p>Do sada smo stvorili testni element i mijenjali neka od njegovih svojstava, ali sadržaj je ostao onaj isti koji je bio i na početku. Naravno, mogli smo stvoriti i prazan element kojeg uopće ne bismo vidjeli. Ili element koji sadržava drugačiji tekst i eventualno sliku i ostale sadržaje koji se mogu naći na jednoj web stranici. Zato ćemo sada promijeniti sadržaj elementa test i to na način da ćemo ga zamijeniti sadržajem prvog odjeljka ove stranice.</p>
+			<pre><input type="button" value="novi tekst" />$(&quot;#test&quot;).text($(&quot;p:first&quot;).text());</pre>
+			<p>Možemo testni okvir lako sakriti, ponovo prikazati, ili sakriti/prikazati koristeći različite animacije (brojevi u zagradama kod animacija su trajanje animacije u milisekundama, ako ih ne navedemo koristi se predefinirano trajanje). Probajte ih naizmjence kombinirati:</p>
+			<pre><input type="button" value="sakrij" />$(&quot;#test&quot;).hide();</pre><br />
+			<pre><input type="button" value="prikaži" />$(&quot;#test&quot;).show();</pre><br />
+			<pre><input type="button" value="izblijedi" />$(&quot;#test&quot;).fadeOut(750);</pre><br />
+			<pre><input type="button" value="postepeno prikaži" />$(&quot;#test&quot;).slideDown();</pre>
+<br />
+<p>Često je potrebno pomoću jedne kontrole naizmjence koristiti dvije suprotne operacije (prikaži/sakrij uz eventualnu animaciju). Da ne bismo morali u JavaScriptu svaki put očitavati stanje elementa i programirati odgovarajuće akcije, moguće je koristiti gotove kombinacije:</p>
+			<pre><input type="button" value="sakrij/prikaži" />$(&quot;#test&quot;).toggle();</pre>
+			<pre><br /><input type="button" value="postepeno sakrij/prikaži" />$(&quot;#test&quot;).slideToggle(600);</pre>
+			<p>Još ćemo se malo pozabaviti funkcijom <code>.animate()</code>, jer je ona posebno zanimljiva početnicima. Ona je koncipirana na način da joj zadate CSS svojstvo koje želite animirati (uz napomenu da se složenice ne upisuju odvojene crticom, nego se koristi tzv. camel case: umjesto <code>padding-left</code> pišete <code>padding</code><code>Left</code> ) i vrijeme trajanja animacije.</p>
+			<pre><input type="button" value="visina" />$(&quot;#test&quot;).animate({height:300},&quot;normal&quot;);</pre>
+			<pre><br /><input type="button" value="prozirnost" />$(&quot;#test&quot;).animate({opacity:&quot;toggle&quot;},&quot;slow&quot;);</pre>
+<p>Svi dosadašnji primjeri (osim prvog) su se svodili na dohvat DOM elementa i njegovu manipulaciju, što i jest najčešća operacija. Ali naravno da ovo nisu jedine mogućnosti manipulacije, sa osnovnim poznavanjem engleskog jezika možete u <a href="http://docs.jquery.com/">dokumentaciji jQuery-a</a> pronaći još mogućnosti i kombinacija. Kombinacijama samo ovdje navedenih mogućnosti moguće je napraviti ogroman broj efekata, pogotovo ako se pozabavite metodom <code>.css()</code> ili za animacije koristite <code>.animate()</code> u kojem mijenjate svojstva prikaza.</p>
+			<p>Za dohvat bilo kojeg elementa koristi se sintaksa <code>$(&quot;traženiIZRAZ&quot;)</code>, pri čemu traženi izraz može biti bilo koji oblik CSS selektora. Npr. okvir ovog teksta se nalazi u div elementu koji ima id &quot;sadrzaj&quot;, dakle u HTML kodu cijeli ovaj tekst se nalazi unutar tagova:</p>
+			<pre>  &lt;div id=&quot;sadrzaj&quot;&gt;
+   ...   sadržaj teksta (bez okvira, izbornika i sl...
+  &lt;/div&gt;</pre>
+<p>Taj div element bismo dohvatili pomoću <code>$(&quot;div#sadrzaj&quot;)</code> izraza. Napisat ću samo osnovne izraze za odabir elemenata, a cijelu listu i objašnjenja možete naći na stranici <a href="http://docs.jquery.com/Selectors">jQuery selectors</a> unutar dokumentacije.</p>
+<pre>  element   ..................... svi elementi navedenog tipa
+  #id	     ................... jedan element navedenog id-a
+  .class    ..................... svi elementi navedenog class-a
+  *      	 .................. svi elementi
+  SELEKTOR1, SELEKTOR2, SELEKTOR3 ... višestruki selektor
+</pre>
+<h1>event management</h1>
+<p>Sada kad smo vidjeli kako jQuery omogućava izvođenje relativno složenih operacija uz vrlo malo komplikacija u odnosu na obični JavScript, vrijeme je da pokažemo drugu važnu stvar koju jQuery još više pojednostavljuje. Radi se o <acronym title="event: eng. događaj">eventima</acronym> kao što su klik na neki element stranice, prelazak mišem preko njega, odabira polja formulara i slično. Programiranje evenata je u JavaScriptu složen problem koji može izazvati dosta nepredviđenih problema, i zato je pomoć jQuery-a u ovome vrlo značajna. Ovo je najčešći način kako se programira ponašanje elemenata na stranici (i jedini koji se preporuča u ozbiljnoj upotrebi). Pri učitavanju stranice se obave sve potrebne operacije i zatim se ponašanje stranice prepusti programiranim eventima. Primjer na ovoj stranici je glavni izbornik koji reagira na <acronym title="prelazak strelicom miša iznad elementa">mouseover</acronym> event na način da se otvori podizbornik, a zatim na <acronym title="odlazak strelice miša sa elementa">mouseout</acronym> event tako da se zatvori.</p>
+<p>U ovom vodiču je tako iskorišten <acronym title="klik mišem">click</acronym> event za aktiviranje gumba sa naredbama. Akcija koja će se izvršiti nije programirana za svaki gumb zasebno (iako se to često radi), nego je definiran click event za sve gumbe odjednom koji će izvršiti naredbu koja se nalazi neposredno iza gumba koji je kliknut:</p>
+<pre>$(&quot;#sadrzaj pre&gt;input&quot;).click(function(){
+eval($(this).parent().text());
+});</pre>
+<p>Objašnjenje ovog naizgled kompliciranog koda: dohvatili smo sve gumbe na stranici pomoću <code>$(&quot;#sadrzaj pre&gt;input&quot;)</code> i zatim smo im dodali click event pomoću <code>.click(function(){...}</code> . Dakle, kad kliknemo na bilo koji od gumba na ovoj stranici izvršit će se kod između vitičastih zagrada koji kaže <code>eval($(this).parent.text());</code> . To bi, prevedeno na hrvatski, značilo ovo: <acronym title=".text()">dohvati tekstualni sadržaj</acronym> <acronym title=".parent()">elementa u kojem se nalazi</acronym> <acronym title="$(this) - gumb je ono na što se odnosi event, zato ga dohvaćamo sa $(this)">gumb</acronym> i <acronym title="eval(...)">izvrši ga</acronym>.</p>
+<p>Na isti način mogli smo dodati bilo koji event. Za primjer ćemo dodati istu funkciju gumbu, ali vezano na mouseover event. To znači da će umjesto klika na gumb biti dovoljno doći iznad njega mišem da bi se izvršila vezana naredba. Probajte se vratiti na gumbe koji su pokazivali i skrivali testni okvir da vidite kako to funkcionira.</p>
+<pre><input type="button" value="dodaj event" />$(&quot;#sadrzaj pre&gt;input&quot;).mouseover(function(){
+eval($(this).parent().text());})</pre>
+<p>Da ne bi  ostalo na tome, uklonit ćemo ovakav način ponašanja jer on nije tipičan za gumbe,  korisnici su navikli na to da gumb treba kliknuti da bi ga se aktiviralo. Event se uklanja naredbom <code>.unbind()</code> a parametar u zagradama se odnosi na vrstu eventa koji uklanjamo.</p>
+<pre><input type="button" value="dodaj event" />$(&quot;#sadrzaj pre&gt;input&quot;).unbind(&quot;mouseover&quot;);</pre>
+<p>Osim standardnih evenata koji su definirani od strane <a href="http://www.w3.org/">W3C</a>-a, koji je tijelo zaduženo za standardizaciju svih stvari vezanih uz internet, jQuery nudi još neke korisne &quot;evente&quot;. Dobar primjer je <code>.hover()</code> koji glumi dva različita, a često zajedno korištena eventa: mouseover i mouse out. Pomoću ovog eventa je napravljen i glavni izbornik na ovoj stranici. Za demonstraciju ćemo pokazati kako promijeniti ponašanje svakog drugog odjeljka teksta kad pokazivač miša dođe iznad njega koristeći <code>.hover()</code> event:</p>
+<pre><input type="button" value="dodaj hover" />$(&quot;#sadrzaj p:odd&quot;).hover(
+function(){    // prva funkcija definira mouseover
+$(this).animate({width:333})},
+function(){  // druga funkcija definira mouseout
+$(this).animate({width:412})
+});</pre><br />
+<pre><input type="button" value="ukloni evente" />$(&quot;#sadrzaj p:odd&quot;).unbind();</pre>
+<p>Obratite pažnju na to da ovaj put kod uklanjanja eventa funkciji <code>.unbind()</code> nije dan nikakav parametar. To znači da ne uklanjamo samo hover event, nego sve evente koji su povezani sa neparnim odjeljcima teksta na stranici (moglo ih je biti više i svi bi bili ukonjeni). </p>
+<p>Usput ćemo objasniti i selektor koji nam je omogućio da odaberemo samo svaki drugi odjeljak: <code>$(&quot;ELEMENT:odd&quot;)</code> - filter <code>:odd</code> znači da biramo samo neparne elemente od onih koji odgovaraju upitu prije filtera. Zapravo, ako baš budete analizirali, ustanovit ćete da <code>:odd</code> bira parne a <code>:even</code> neparne što na prvi pogled nema logike. Ali ako znate da u JavScriptu svako brojanje počinje od nultog umjesto od prvog elementa, onda je sve jasno.</p>
+<h1>ostale pogodnosti koje nudi jQuery</h1>
+<p>S ovim vodičem smo samo zagrebli površinu mogućnosti koje se otvaraju korištenjem jQuery biblioteke. Jedna od također važnih stvari, a koja ne spada u tekstove za početnike je AJAX. Ova biblioteka podržava AJAX i omogućava napredno i jednostavno korištenje ove tehnologije.  jQuery i tu nudi mnogo više, ali to će oni koji žele znati više lako otkriti.</p>
+<p>Uz  jQuery je moguće koristiti i gotove komponente (plugins) koje mogu drastično proširiti funkcionalnost. Na ovim stranicama se koriste jQuery.LightBox za prikaz slika u fotogaleriji i jQuery.jMaps za kontrolu <a href="../gmap.html">Google karte</a>. Ovakve gotove komponente imaju gotovo neograničene mogućnosti, npr. ako želite tablicama na svojoj stranici dodati napredne mogućnosti sortiranja ili razne druge operacije s tablicama potražite jQuery.InGRID. Za crtanje grafikona iz podataka sa stranice (ili živih podataka sa drugih stranica dohvaćenih AJAX-om) možete koristiti odličan plugin jQuery.jQchart. Nekima može biti koristan plugin koji provjerava ispravnost podataka unesenih u formular na web stranici, live form validation jQuery plug in. Popis je ogroman, pogledajte sami na <a href="http://jquery.com/plugins/">jquery.com/plugins/</a>.</p>
+<h1>za koga je jQuery namijenjen</h1>
+	      <p>Zapravo ne postoji određeni profil korisnika za koje bi se moglo reći da je najviše njima namjenjen. Koriste ga giganti poput Nokie i Googlea, napredni programeri, ali i početnici u JavaScriptu. Često ga koriste čak i dizajneri web stranica koji uopće ne znaju JavaScript, zato što je jako jednostavno naučiti osnovne stvari, a za sve kompliciranije je moguće pronaći kvalitetan plugin. Pogledajte popis <a href="http://docs.jquery.com/Sites_Using_jQuery">stranica koje koriste jQuery</a>, uz napomenu da su ovdje navedene samo stranice koje su autori prijavili. Pravi popis bi sigurno bio mnogo duži, ja sam mjesecima koristio jQuery a da nisam ni znao da popis postoji.</p>
+	      <p>Zapravo je jedini preduvjet (iako ni taj nije nezaobilazan) da znate barem osnove engleskog jezika, iz razloga što je dokumentacija i ogroman broj primjera i vodiča na engleskom jeziku. Ali ako malo dublje proanalizirate kako smo ga koristili u ovom vodiču, i tu prepreku je moguće preskočiti. Najvažnije je pridržavati se sintakse, jer jedan zarez ili točka nekad mogu onesposobiti učitavanje cijele stranice.</p>
+	      <p>Ukratko, mogli bismo reći da je jQuery namjenjen svima koji žele koristiti napredne mogućnosti na svojim web stranicama, uz malo truda jer je krivulja učenja vrlo blaga. Nadam se da je ovaj tekst bio zanimljiv i koristan.</p>
+	    <!-- InstanceEndEditable --></div>
+      </div>
+	<div id="podnozje">
+		<div id="podLivo"><div id="datum"></div></div>
+		<div id="podSredina"></div>
+		<div id="podDesno"></div>
+	</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
