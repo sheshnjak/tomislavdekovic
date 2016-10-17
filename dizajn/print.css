@@ -1,0 +1,21 @@
+body{color:#000;font:14px Verdana,Arial,Helvetica,sans-serif;width:100%;margin:0;float:none;background:#fff url(none);}
+h1{font-size:250%;font-weight:lighter;margin:10px;padding:5px;text-align:center}
+h2{font-size:175%;margin:10px;padding:5px;text-align:center}
+h3{font-size:135%;margin:10px;padding:5px;text-align:left}
+img{margin:5px;padding:1px}
+p{text-align:justify}
+blockquote{border-left-width:10px;background-color:#F6F6F6;text-align:justify;}
+.galerija{display:block;list-style:none;margin-bottom:25px;padding-left:6px}
+.galerija li{border:1px solid #DDDDDD;display:inline;float:left;font-size:11px;height:131px;margin:5px;padding:5px;text-align:center;width:122px}
+.galerija li img{border:none;margin-left:-1px}
+.slide{display:block;margin:0;padding:0;text-align:center}
+.slide img{border:none;margin:0;padding:1px}
+#desno{float:right;overflow:hidden;width:30px}
+#okvirSadrzaja{clear:both;margin:0;padding:0;width:700px}
+#okvirStranice{margin:0px auto;padding:30px}
+#podLivo #datum{color:#CCC;margin-top:200px;text-align:right}
+#sadrzaj{font-size:12px;margin:0px;text-align:justify;vertical-align:top;width:95%}
+#sadrzaj table{border:1px solid #DDDDDD;font-size:12px;margin:0 10px 0 10px;width:100%}
+.noprint,#zaglavlje,#zagLivo,#zagSredina,#zagDesno,#navigacija,#livo,#podnozje,#podLivo,#podSredina,#podDesno,#sazetak{display:none}
+.galerija li a:hover,.okvir tr td{border:none}
+a:link,a:visited{color:#666;text-decoration:underline;}

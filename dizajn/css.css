@@ -1,0 +1,71 @@
+*{margin:0;padding:0;}
+body{color:#666;font-size:12px;line-height:16px;margin:0;padding:0;text-align:center;background-color: #FFF;font-family:Verdana,Arial,Helvetica,sans-serif}
+a:link,a:visited{color:#F60;text-decoration:none}
+a:hover{border-bottom:1px dotted #F60;color:#F60;text-decoration:none}
+a:active{color:#F60}
+#sadrzaj h1{border:1px solid #DDD;font-size:18px;font-weight:lighter;margin:10px;padding:5px;text-align:center}
+#sadrzaj h2{border:1px solid #DDD;clear:both;font-size:14px;margin:10px;padding:5px;text-align:center}
+#sadrzaj h3{border:1px solid #DDD;clear:both;font-size:13px;margin:10px;padding:5px;text-align:left}
+#sadrzaj p{border:1px solid #DDD;margin:10px;padding:5px;text-align:justify}
+#sadrzaj blockquote{border:1px solid #DDD;border-left-width:10px;background-color:#F6F6F6;margin:10px;padding:5px;text-align:justify;}
+#sadrzaj p>code {font-family: "Courier New", Courier, monospace;background-color:#DDD;}
+#sadrzaj pre {font-family: "Courier New", Courier, monospace;background-color: #DDD;display: inline;line-height: 150%;}
+#sadrzaj pre>input { margin: 0 5px 0 9px;}
+table{border:1px solid #DDD;line-height:16px;margin-left:10px;text-align:left;width:424px}
+table tr td{margin:0;padding:0}
+.centrirano{text-align:center !important}
+.livo{float:left}
+.desno{float:right}
+.zebra{}
+#sadrzaj img{border:1px solid #DDD;margin:5px;padding:1px}
+#sadrzaj ul.galerija{list-style-type:none;margin:-5px 0 0 5px;padding:0;border:none;}
+#sadrzaj ul.galerija li{border:1px solid #DDD;display:inline;float:left;text-align:center;font-size:11px;height:120px;margin:5px;overflow:hidden;padding:6px;width:120px}
+#sadrzaj ul.galerija li a{display:block;width:120px}
+#sadrzaj ul.galerija li a img{border:none;margin:0;padding:0}
+#sadrzaj ul.galerija li a:hover{border:none}
+#desno{float:right;width:30px}
+#livo{float:left;width:222px}
+ul#navigacija, ul#navigacija>li>ul{list-style-type:none;margin-top:0;padding-left:0;margin-left:10px}
+ul#navigacija>li{border-bottom:1px solid #666;color:#F60;font-size:14px;line-height:30px;padding-right:10px;text-align:right}
+ul#navigacija>li>ul{font-size:11px;line-height:17px;}
+ul#navigacija>li>ul>li>a.trenutnaStranica {color:#666}
+#okvirSadrzaja{clear:both;margin:0;padding:0;}
+#okvirStranice{margin:0px auto;padding:30px;width:700px}
+#opis{font-size:10px;line-height:12px;padding:5px;text-align:justify}
+#podDesno{border-top:1px solid #666;float:right;width:32px}
+#podLivo{background:url(ruka.png) no-repeat top right;float:left;height:222px;margin-top:-199px;width:222px}
+#podLivo #datum{color:#CCC;margin-top:200px;text-align:right}
+#podnozje{clear:both;font-size:9px;margin-top:-1px}
+#podSredina{border:1px solid #666;border-bottom:none;float:left;height:22px;padding:2px;width:440px}
+#sadrzaj{border:1px solid #666;border-width:0 1px 0 1px;float:left;min-height:400px;width:444px;text-align:justify;}
+#sadrzaj table{border:1px solid #DDD;font-size:12px;margin:0 10px 10px 10px;width:424px}
+#sadrzaj ul{list-style-type:square;border:1px solid #DDD;border-left-width:10px;margin:10px;padding:5px;text-align:justify;}
+#sadrzaj ul li ul{margin:1px 0 0 20px;margin-right:5px;margin-bottom:5px;}
+#sadrzaj p+ul{margin-top:-11px;}
+#zaglavlje{border-bottom:1px solid #666;clear:both;height:25px}
+#zagLivo{float:left;font-size:14px;width:222px}
+#zagSredina{border:1px solid #666;border-width:0 1px 0 1px;float:left;height:25px;width:444px}
+ul#sazetak{font-size:10px;opacity:0.2} ul#sazetak li{display:none} /* skripta ga prikazuje */
+#livo ul#sazetak{list-style-type:none;margin:2px auto;text-align:right;width:200px}
+#slajdDesno{background:#DDD;display:inline;float:right;height:104px;margin:0 11px 0 0;width:14px}
+#slajdKontejner{left:0px;padding:5px 5px 5px 0;position:relative;width:2000px;z-index:4}
+#slajdKontejner img{border:none;display:inline;float:left;margin:0 0 0 7px}
+#slajdLivo{background:#DDD;display:inline;float:left;height:104px;margin:0 0 10px 10px;width:14px}
+#slajdOkvir{border:1px solid #DDD;float:left;height:102px;margin:0;overflow:hidden;position:relative;width:393px;z-index:5}
+
+#lbOverlay {position: fixed;z-index: 9999;left: 0;top: 0;width: 100%;height: 100%;background-color: #000;cursor: pointer;}
+#lbCenter, #lbBottomContainer {position: absolute;z-index: 9999;overflow: hidden;}
+#lbCenter {background-color: #fff;}
+.lbLoading {background: #fff url(loading.gif) no-repeat center;}
+#lbImage {position: absolute;left: 0;top: 0;border: 1px solid #fff;background-repeat: no-repeat;}
+#lbPrevLink, #lbNextLink {display: block;position: absolute;top: 0;width: 50%;outline: none;border: none;}
+#lbPrevLink {left: 0;}
+#lbPrevLink:hover {background: transparent url(prev.png) no-repeat 0 35%;}
+#lbNextLink {right: 0;}
+#lbNextLink:hover {background: transparent url(next.png) no-repeat 100% 35%;}
+#lbBottom {border: 1px solid #fff;padding: 5px;border-top-style: none;}
+#lbCloseLink {display: block;float: right;margin-top: 32px;outline: none;}
+#lbCaption, #lbNumber {margin-right: 71px;}
+#lbNumber {text-align:left;}
+#lbCaption {color: #FFF;font-weight: bold;text-align: center;}
+#lbCaption div {font-weight: normal;}
