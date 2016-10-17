@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-EN">
+<head>
+<!-- TemplateBeginEditable name="doctitle" --><title>..:: sheshnjak ::..</title><!-- TemplateEndEditable --><!-- TemplateBeginEditable name="meta" -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="Tomislav Dekovic, Turanj, Croatia, digital photography, web design, graphic design, monitor calibration" />
+<meta name="Description" content="Tomislav Deković, personal website containing photo gallery. Graphical and web design. Description and history of Turanj." />
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="../favicon.ico" />
+<link href="../dizajn/print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="../dizajn/css.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="../dizajn/jquery.js" type="text/javascript"></script>
+<script src="../dizajn/jquery.plugins.js" type="text/javascript"></script>
+<script src="../dizajn/js.js" type="text/javascript"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="okvirStranice">
+	<div id="zaglavlje">
+		<div id="zagLivo"><a href="../index-en.html">..::&nbsp;sheshnjak&nbsp;::..</a></div>
+		<div id="zagSredina"></div>
+		<div id="zagDesno"></div>
+	</div>
+	<div id="okvirSadrzaja">
+		<div id="livo">
+			<ul id="navigacija">
+				<li>photography<ul>
+						<li><a href="../fotogalerija-en.html">photogallery</a></li>
+						<li><a href="../kalibracija-en.html">monitor calibration</a></li>
+				</ul></li>
+				<li>design<ul>
+						<li><a href="../webdizajn-en.html">web design</a></li>
+						<li><a href="../grafdizajn-en.html">graphic design</a></li>
+				</ul></li>
+				<li>other<ul>
+						<li><a href="../omeni-en.html">about me</a></li>
+						<li><a href="../turanj-en.html">turanj</a></li>
+						<li><a href="../gmap-en.html">gmaps</a></li>
+						<li><a href="../linkovi-en.html">links</a></li>
+						<li><a href="../sitemap-en.html">sitemap</a></li>
+					</ul></li>
+				<li><a href="../index.html">hrvatski</a></li>
+			</ul>
+		</div>
+		<div id="desno"></div>
+	    <div id="sadrzaj"><!-- TemplateBeginEditable name="sadrzaj" -->
+          <h1>h1</h1>
+	      <p>p</p>
+	      <p>p</p>
+	      <p>p</p>
+	      <p>p</p>
+        <!-- TemplateEndEditable --></div>
+      </div>
+	<div id="podnozje">
+		<div id="podLivo"><div id="datum"></div></div>
+		<div id="podSredina"></div>
+		<div id="podDesno"></div>
+	</div>
+</div>
+</body>
+</html>
